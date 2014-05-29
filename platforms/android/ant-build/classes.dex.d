@@ -1,9 +1,9 @@
-D:\proyectos\JSGames\platforms\android\ant-build\classes.dex : \
-D:\proyectos\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\BuildConfig.class \
-D:\proyectos\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\HelloCordova.class \
-D:\proyectos\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$attr.class \
-D:\proyectos\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$drawable.class \
-D:\proyectos\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$string.class \
-D:\proyectos\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$xml.class \
-D:\proyectos\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R.class \
-D:\proyectos\JSGames\platforms\android\ant-build\dexedLibs\classes-095843f44eb289c4494bad62dddef9cb.jar \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes.dex : \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\BuildConfig.class \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\HelloCordova.class \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$attr.class \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$drawable.class \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$string.class \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R$xml.class \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\classes\io\cordova\hellocordova\R.class \
+C:\Proyectos\phonegap\JSGames\platforms\android\ant-build\dexedLibs\classes-94b670d9fba97ed91065d3d75080016a.jar \
