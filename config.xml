@@ -10,5 +10,4 @@
     <content src="index.html" />
     <access origin="*" />
     <preference name="Orientation" value="landscape" />	
-    <preference name="BackgroundColor" value="0xff0000ff"/>
 </widget>
