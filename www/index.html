@@ -61,6 +61,10 @@ function create() {
     ship = game.add.sprite(200, 200, 'ship');
     game.physics.p2.enable(ship);
 
+    ship.body.setCircle(20);
+
+    ship.body.drag = new Phaser.Point(10, 10);
+
     game.camera.follow(ship);
 
     //  By default the ship will collide with the World bounds,
@@ -81,8 +85,13 @@ function create() {
 var currentSpeed = 0;
 
 function update() {
+   doAsPhone();
 
-/*    if (cursors.left.isDown)
+
+}
+
+function doAsPC() {
+     if (cursors.left.isDown)
     {
         ship.body.rotateLeft(100);
     }
@@ -93,17 +102,20 @@ function update() {
     else
     {
         ship.body.setZeroRotation();
-    }*/
+    }
 
-/*    if (cursors.up.isDown)
+    if (cursors.up.isDown)
     {
-        ship.body.thrust(400);
+        ship.body.moveForward(400);
     }
     else if (cursors.down.isDown)
     {
-        ship.body.reverse(400);
-    }*/
-    currentSpeed = 50;
+        ship.body.moveBackward(400);
+    }
+}
+
+function doAsPhone() {
+    currentSpeed = 150;
     if (game.input.activePointer.isDown)
     {
         ship.body.rotateLeft(70);
@@ -113,16 +125,11 @@ function update() {
         ship.body.rotateRight(70);
     }
 
-    if (currentSpeed > 0)
-    {
-        //console.log(game.physics.arcade.velocityFromRotation);
-        //game.physics.arcade.velocityFromRotation(ship.rotation, currentSpeed, ship.body.velocity);
-        
-    }
-
-    //ship.body.moveForward(currentSpeed);
-    ship.body.thrust(currentSpeed);
+    ship.body.moveForward(currentSpeed);
+    //ship.body.thrust(currentSpeed);
 }
+
+
 
 function render() {
 
