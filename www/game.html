@@ -1,10 +1,10 @@
 <!doctype html> 
 <html lang="en"> 
 <head> 
-	<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <title>Phaser - Making your first game, part 9</title>
     <script type="text/javascript" src="js/phaser.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
     <style type="text/css">
         body {
             margin: 0;
@@ -16,7 +16,7 @@
 <script type="text/javascript">
 
 
-var game = new Phaser.Game(320, 240, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(640, 360, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
 
@@ -61,7 +61,7 @@ function create() {
     ship = game.add.sprite(200, 200, 'ship');
     game.physics.p2.enable(ship);
 
-    ship.body.setCircle(20);
+    ship.body.setCircle(15);
 
     ship.body.drag = new Phaser.Point(10, 10);
 
@@ -80,9 +80,29 @@ function create() {
 
     cursors = game.input.keyboard.createCursorKeys();
 
+    ship.body.onBeginContact.add(blockHit, this);
+
+    /*bmd = game.add.bitmapData(800, 4800);
+    bmd.context.fillStyle = '#ffffff';
+
+    var bg = game.add.sprite(0, 0, bmd);*/
+
 }
 
-var currentSpeed = 0;
+function blockHit (body, shapeA, shapeB, equation) {
+
+    //  The block hit something
+    //  This callback is sent: the Body it collides with
+    //  shapeA is the shape in the calling Body involved in the collision
+    //  shapeB is the shape in the Body it hit
+    //  equation is an array with the contact equation data in it
+
+    navigator.notification.vibrate(100);
+    currentSpeed = 200;
+}
+
+//var bmd;
+var currentSpeed = 200;
 
 function update() {
    doAsPhone();
@@ -115,7 +135,11 @@ function doAsPC() {
 }
 
 function doAsPhone() {
-    currentSpeed = 150;
+    
+    currentSpeed += 1;
+
+    currentSpeed = Math.min(currentSpeed, 400)
+
     if (game.input.activePointer.isDown)
     {
         ship.body.rotateLeft(70);
@@ -127,6 +151,10 @@ function doAsPhone() {
 
     ship.body.moveForward(currentSpeed);
     //ship.body.thrust(currentSpeed);
+
+   // bmd.context.fillRect(ship.x, ship.y, 2, 2);
+
+    //bmd.dirty = true;
 }
 
 

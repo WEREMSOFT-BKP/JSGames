@@ -35,8 +35,10 @@ D:\proyectos\JSGames\platforms\android\assets\www\cordova_plugins.js \
 D:\proyectos\JSGames\platforms\android\assets\www\icons \
 D:\proyectos\JSGames\platforms\android\assets\www\index.html \
 D:\proyectos\JSGames\platforms\android\assets\www\js \
+D:\proyectos\JSGames\platforms\android\assets\www\plugins \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\sprites \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps \
+D:\proyectos\JSGames\platforms\android\assets\www\assets\sprites\coin.png \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\sprites\thrust_ship2.png \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\maps \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\tiles \
@@ -49,4 +51,7 @@ D:\proyectos\JSGames\platforms\android\assets\www\icons\icon-48-mdpi.png \
 D:\proyectos\JSGames\platforms\android\assets\www\icons\icon-72-hdpi.png \
 D:\proyectos\JSGames\platforms\android\assets\www\icons\icon-96-xhdpi.png \
 D:\proyectos\JSGames\platforms\android\assets\www\js\phaser.min.js \
+D:\proyectos\JSGames\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
+D:\proyectos\JSGames\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
+D:\proyectos\JSGames\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
 D:\proyectos\JSGames\platforms\android\ant-build\AndroidManifest.xml \
