@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Phaser - Making your first game, part 9</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <script type="text/javascript" src="js/phaser.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <style type="text/css">
         body {
@@ -18,11 +18,11 @@
 
 $(function ()
 {
-    alert( values[ 0 ] );    
+    game = new Phaser.Game(640, 360, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 });
 
 
-var game = new Phaser.Game(640, 360, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+var game;
 
 function preload() {
 
@@ -65,12 +65,20 @@ function create() {
     //  Convert the tilemap layer into bodies. Only tiles that collide (see above) are created.
     //  This call returns an array of body objects which you can perform addition actions on if
     //  required. There is also a parameter to control optimising the map build.
-    game.physics.p2.convertTilemap(map, layer);
+    //game.physics.p2.convertTilemap(map, layer);
+
+    var arrPolys = game.physics.p2.convertCollisionObjects(map, "collision", true);
+
+    $.each(arrPolys, function ( index, value ) {
+        value.debug = true;
+    });
+
+    game.physics.p2.enable(arrPolys, true)
 
     ship = game.add.sprite(200, 200, 'ship');
     ship2 = game.add.sprite(220, 200, 'ship');
-    game.physics.p2.enable(ship);
-    game.physics.p2.enable(ship2);
+    game.physics.p2.enable(ship, true);
+    game.physics.p2.enable(ship2, true);
 
     ship.body.setCircle(15);
     ship2.body.setCircle(15);
@@ -97,14 +105,16 @@ function create() {
     ship2.body.onBeginContact.add(blockHit, this);
 
 
-  var gray = game.add.filter('Gray');
+  /*var gray = game.add.filter('Gray');
 
-  ship2.filters = [gray];
+  ship2.filters = [gray];*/
 
     /*bmd = game.add.bitmapData(800, 4800);
     bmd.context.fillStyle = '#ffffff';
 
     var bg = game.add.sprite(0, 0, bmd);*/
+
+    game.enableBodyDebug = false;
 
 }
 
@@ -125,7 +135,7 @@ var currentSpeed = 200;
 
 function update() {
    doAsPhone();
-
+   // doAsPC()
 
 }
 
@@ -189,7 +199,7 @@ function doAsPhone() {
 
 
 function render() {
-
+    game.debug.body(ship);
 }
 </script>
 

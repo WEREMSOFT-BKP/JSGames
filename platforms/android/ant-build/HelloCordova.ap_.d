@@ -65,7 +65,7 @@ D:\proyectos\JSGames\platforms\android\assets\www\icons\icon-72-hdpi.png \
 D:\proyectos\JSGames\platforms\android\assets\www\icons\icon-96-xhdpi.png \
 D:\proyectos\JSGames\platforms\android\assets\www\js\bootstrap.js \
 D:\proyectos\JSGames\platforms\android\assets\www\js\bootstrap.min.js \
-D:\proyectos\JSGames\platforms\android\assets\www\js\phaser.min.js \
+D:\proyectos\JSGames\platforms\android\assets\www\js\phaser.js \
 D:\proyectos\JSGames\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
 D:\proyectos\JSGames\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
 D:\proyectos\JSGames\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
