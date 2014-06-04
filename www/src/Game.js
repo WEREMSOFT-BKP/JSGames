@@ -40,6 +40,10 @@ BasicGame.Game.prototype = {
     map: null,
     layer: null,
     cursors: null,
+    layer: {},
+
+
+
 
     create: function () {
 
@@ -55,9 +59,14 @@ BasicGame.Game.prototype = {
         this.map.addTilesetImage('walls_1x2');
         this.map.addTilesetImage('tiles2');
         this.map.addTilesetImage('rpg_tileset');
-        this.layer = map.createLayer('Tile Layer 1');
 
-        this.layer.resizeWorld();
+        this.layer[0] = this.map.createLayer('Tile Layer 1');
+        this.layer[0].resizeWorld();
+        this.layer[1] = this.map.createLayer('Objects');
+        this.layer[1].resizeWorld();
+        this.layer[1].scrollFactorX = 0.5;
+
+
 
         //  Set the tiles for collision.
         //  Do this BEFORE generating the p2 bodies below.
@@ -66,12 +75,12 @@ BasicGame.Game.prototype = {
         //  Convert the tilemap layer into bodies. Only tiles that collide (see above) are created.
         //  This call returns an array of body objects which you can perform addition actions on if
         //  required. There is also a parameter to control optimising the map build.
-        //this.physics.p2.convertTilemap(map, layer);
+        //this.physics.p2.convertTilemap(this.map, this.layer);
 
-        var arrPolys = this.physics.p2.convertCollisionObjects(map, "collision", true);
+        var arrPolys = this.physics.p2.convertCollisionObjects(this.map, "collision", true);
 
         $.each(arrPolys, function ( index, value ) {
-            value.debug = true;
+            //value.debug = true;
         });
 
         this.physics.p2.enable(arrPolys, true)
@@ -115,7 +124,7 @@ BasicGame.Game.prototype = {
 
         var bg = this.add.sprite(0, 0, bmd);*/
 
-        this.enableBodyDebug = false;
+        //this.enableBodyDebug = false;
 
     },
 
@@ -135,8 +144,8 @@ BasicGame.Game.prototype = {
     currentSpeed: 200,
 
     update: function() {
-       this.doAsPhone();
-       //this.doAsPC();
+       //this.doAsPhone();
+       this.doAsPC();
 
     },
 
