@@ -49,19 +49,19 @@ BasicGame.Game.prototype = {
 
         this.input.addPointer();
 
-        map = this.add.tilemap('map');
+        this.map = this.add.tilemap('map');
 
-        map.addTilesetImage('ground_1x1');
-        map.addTilesetImage('walls_1x2');
-        map.addTilesetImage('tiles2');
-        
-        layer = map.createLayer('Tile Layer 1');
+        this.map.addTilesetImage('ground_1x1');
+        this.map.addTilesetImage('walls_1x2');
+        this.map.addTilesetImage('tiles2');
+        this.map.addTilesetImage('rpg_tileset');
+        this.layer = map.createLayer('Tile Layer 1');
 
-        layer.resizeWorld();
+        this.layer.resizeWorld();
 
         //  Set the tiles for collision.
         //  Do this BEFORE generating the p2 bodies below.
-        map.setCollisionBetween(1, 12);
+        //map.setCollisionBetween(1, 12);
 
         //  Convert the tilemap layer into bodies. Only tiles that collide (see above) are created.
         //  This call returns an array of body objects which you can perform addition actions on if

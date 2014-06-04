@@ -50,6 +50,7 @@ D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\maps \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\tiles \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\maps\collision_test.json \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\tiles\ground_1x1.png \
+D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\tiles\RPG_Maker_VX_RTP_Tileset_by_telles0808.png \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\tiles\tiles2.png \
 D:\proyectos\JSGames\platforms\android\assets\www\assets\tilemaps\tiles\walls_1x2.png \
 D:\proyectos\JSGames\platforms\android\assets\www\audio\main_menu.mp3 \
