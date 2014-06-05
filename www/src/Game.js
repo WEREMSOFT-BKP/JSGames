@@ -144,8 +144,8 @@ BasicGame.Game.prototype = {
     currentSpeed: 200,
 
     update: function() {
-       //this.doAsPhone();
-       this.doAsPC();
+       this.doAsPhone();
+       //this.doAsPC();
 
     },
 
