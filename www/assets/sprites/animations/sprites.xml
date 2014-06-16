@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:1ddaf327c39259a3aa03dab91ce167df$ -->
+<TextureAtlas imagePath="test.png">
+    <SubTexture name="font01_a" x="232" y="62" width="20" height="32" frameX="-1" frameY="0" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font02_g" x="104" y="34" width="32" height="28" frameX="0" frameY="-37" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font03_s" x="70" y="34" width="32" height="28" frameX="0" frameY="-96" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font04_m" x="2" y="98" width="20" height="28" frameX="-2" frameY="-66" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font05_n" x="32" y="94" width="24" height="28" frameX="-26" frameY="-66" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font06_b" x="118" y="68" width="24" height="32" frameX="-29" frameY="0" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font07_t" x="138" y="2" width="32" height="30" frameX="-35" frameY="-94" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font08_h" x="36" y="34" width="32" height="28" frameX="-37" frameY="-37" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font09_o" x="62" y="64" width="28" height="28" frameX="-54" frameY="-66" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font10_j" x="2" y="64" width="28" height="32" frameX="-60" frameY="0" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font11_u" x="104" y="2" width="32" height="30" frameX="-68" frameY="-94" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font12_i" x="2" y="34" width="32" height="28" frameX="-75" frameY="-37" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font13_p" x="206" y="32" width="32" height="28" frameX="-84" frameY="-66" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font14_d" x="170" y="62" width="30" height="32" frameX="-94" frameY="0" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font15_v" x="138" y="34" width="30" height="32" frameX="-103" frameY="-92" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font16_j" x="172" y="32" width="32" height="28" frameX="-109" frameY="-37" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font17_q" x="206" y="2" width="32" height="28" frameX="-120" frameY="-66" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font18_e" x="70" y="2" width="32" height="30" frameX="-130" frameY="-1" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font19_w" x="202" y="62" width="28" height="32" frameX="-136" frameY="-92" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font20_k" x="32" y="64" width="28" height="28" frameX="-144" frameY="-37" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font21_r" x="172" y="2" width="32" height="28" frameX="-159" frameY="-66" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font22_f" x="36" y="2" width="32" height="30" frameX="-166" frameY="0" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font23_x" x="92" y="64" width="24" height="32" frameX="-167" frameY="-92" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font24_l" x="144" y="68" width="24" height="28" frameX="-175" frameY="-36" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font25_y" x="232" y="62" width="20" height="32" frameX="-1" frameY="-125" frameWidth="200" frameHeight="200"/>
+    <SubTexture name="font26_z" x="2" y="2" width="32" height="30" frameX="-24" frameY="-127" frameWidth="200" frameHeight="200"/>
+</TextureAtlas>

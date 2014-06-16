@@ -7,7 +7,7 @@ BasicGame = {
     music: null,
 
     /* Your game can check BasicGame.orientated in internal loops to know if it should pause or not */
-    orientated: false
+    orientated: true
 
 };
 
@@ -26,7 +26,7 @@ BasicGame.Boot.prototype = {
 
     create: function () {
 
-        this.input.maxPointers = 1;
+        this.input.maxPointers = 4;
         this.stage.disableVisibilityChange = true;
 
         if (this.game.device.desktop)

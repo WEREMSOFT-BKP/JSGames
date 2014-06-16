@@ -68022,6 +68022,8 @@ function Body(options){
      */
     this.fixedRotation = !!options.fixedRotation || false;
 
+    this.dontRotateSpriteWithPhysics = false;
+
     /**
      * The position of the body
      * @property position
@@ -75779,7 +75781,7 @@ Phaser.Physics.P2.Body.prototype = {
         this.sprite.x = this.world.mpxi(this.data.position[0]);
         this.sprite.y = this.world.mpxi(this.data.position[1]);
 
-        if (!this.fixedRotation)
+        if (!this.fixedRotation && !this.dontRotateSpriteWithPhysics)
         {
             this.sprite.rotation = this.data.angle;
         }

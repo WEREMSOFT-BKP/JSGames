@@ -39,7 +39,10 @@ BasicGame.Preloader.prototype = {
 	    this.load.image('rpg_tileset', 'assets/tilemaps/tiles/RPG_Maker_VX_RTP_Tileset_by_telles0808.png');
 
 	    
-	    this.load.image('ship', 'assets/sprites/thrust_ship2.png');
+	    this.load.image('ship0', 'assets/sprites/thrust_ship1.png');
+	    this.load.image('ship1', 'assets/sprites/thrust_ship2.png');
+	    this.load.spritesheet('truck1', 'assets/sprites/truck1.png',32, 32, 24);
+	    this.load.spritesheet('truck2', 'assets/sprites/truck2.png',32, 32, 24);
 
 	},
 
