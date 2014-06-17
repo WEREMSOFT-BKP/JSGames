@@ -49,7 +49,7 @@ BasicGame.Boot.prototype = {
             this.scale.maxHeight = 768;
             this.scale.pageAlignHorizontally = true;
             this.scale.pageAlignVertically = true;
-            this.scale.forceOrientation(false, false);
+            this.scale.forceOrientation(true, false);
             this.scale.hasResized.add(this.gameResized, this);
             this.scale.enterIncorrectOrientation.add(this.enterIncorrectOrientation, this);
             this.scale.leaveIncorrectOrientation.add(this.leaveIncorrectOrientation, this);
@@ -81,6 +81,35 @@ BasicGame.Boot.prototype = {
 
         document.getElementById('orientation').style.display = 'none';
 
+    },
+
+    addBanner: function() {
+        var successCreateBannerView = function() { console.log("addBanner Success"); admob.requestAd({'isTesting': true},success,error); };
+        var success = function() { console.log("requestAd Success"); };
+        var error = function(message) { console.log("Oopsie! " + message); };
+        
+        var options = {
+            'publisherId': 'ca-app-pub-2277344419348786/2594914353',
+            'adSize': admob.AD_SIZE.BANNER
+        }
+        admob.createBannerView(options,successCreateBannerView,error);
+    },
+
+    addInterstitial: function() {
+        var successCreateBannerView = function() { console.log("addInterstitial Success"); admob.requestAd({'isTesting': true},success,error); };
+        var success = function() { console.log("requestAd Success"); };
+        var error = function(message) { console.log("Oopsie! " + message); };
+        
+        var options = {
+            'publisherId': 'ca-app-pub-2277344419348786/2594914353'
+        }
+        admob.createInterstitialView(options,successCreateBannerView,error);
+    },
+    
+    killAd: function() {
+        var success = function() { console.log("killAd Success"); };
+        var error = function(message) { console.log("Oopsie! " + message); };
+        admob.killAd(success,error);
     }
 
 };
